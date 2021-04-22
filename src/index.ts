@@ -1,8 +1,9 @@
 //THIS IS THE ENTRY FILE - WRITE YOUR MAIN LOGIC HERE!
 
-import { helloWorld, Beispiel } from "./myModule";
+import { helloWorld, Beispiel, changeColor, changeColorButton } from "./myModule";
 import { alertMe } from "./myOtherModule";
 
+window.addEventListener("load", changeColorButton);
 console.log(helloWorld);
 customElements.define("my-beispiel", Beispiel);
 
@@ -21,4 +22,8 @@ document
 function doSmth(e: UIEvent) {
   const val = e.target as HTMLInputElement;
   console.log(e, val.value);
-}
+  changeColor();
+
+
+
+      }
