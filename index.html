@@ -4,13 +4,48 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>ART GENERATOR</title>
 </head>
 
 <body>
-    <my-beispiel></my-beispiel>
+    <div><button class="change-color" onclick="changeColor()">
+        <!-- <img src="Icons/Farbkreis.jpg" alt="Change the color"> -->
+        </button></div>
+     <div class="container">
+       <h1>ART GENERATOR</h1>
+       <div class="flex">
+         <form class="flex" id="submit">
+           <input
+             type="text"
+             id="search"
+             placeholder="Search for Artworks"
+           />
+           <button class="search-btn" type="submit">
+            
+           </button>
+         </form>
+         
+       </div>
+       <div class="flex"> 
+           <img src="json/images/header.png" alt="Artworks">
+       </div>
+       <div>
+         <div>   
+             <h4> Press the button to learn something about art </h4>  
+             <button class="discover-btn" onclick="displayRandomImages();"> Discover Artworks</button>  
+             </div>  
+       </div>
+       </div>
+      
+ 
+      
+     </div>
+     <script defer src="build/bundle.js"></script>
+     <!-- <script src="script.js"></script> -->
+   </body>
+ </html>
+  <!-- <my-beispiel></my-beispiel>
     <script defer src="./build/bundle.js"></script>
-    <input type="text" id="myInput" />
-</body>
+    <input type="text" id="myInput" />-->
 
-</html>
