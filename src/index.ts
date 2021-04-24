@@ -1,29 +1,28 @@
 //THIS IS THE ENTRY FILE - WRITE YOUR MAIN LOGIC HERE!
 
-import { helloWorld, Beispiel, changeColor, changeColorButton } from "./myModule";
-import { alertMe } from "./myOtherModule";
 
-window.addEventListener("load", changeColorButton);
-console.log(helloWorld);
-customElements.define("my-beispiel", Beispiel);
 
-alertMe();
+import { changeBackgroundColor} from "./changeBackgroundColor";
+import { randomArtwork, searchArtworks} from "./searchArtworks";
+
+let artworkPage : any = document.getElementById("artworkPage");
+artworkPage.style.display="none";
+
+let changeColorButtons : any= document.getElementsByClassName("change-color");
+changeColorButtons[0].addEventListener("click", changeBackgroundColor);
+
+let searchButtons : any= document.getElementsByClassName("search-btn");
+searchButtons[0].addEventListener("click", searchArtworks);
+
+let discoverButtons : any= document.getElementsByClassName("discover-btn");
+discoverButtons[0].addEventListener("click", randomArtwork);
+
+
+
 
 const myInputValue = document.querySelector<HTMLInputElement>("#myInput");
 
-const myInputValueAlternate = document.querySelector(
-  "#myInput"
-) as HTMLInputElement;
-
-document
-  .querySelector<HTMLInputElement>("#myInput")
-  ?.addEventListener("focus", doSmth);
-
-function doSmth(e: UIEvent) {
-  const val = e.target as HTMLInputElement;
-  console.log(e, val.value);
-  changeColor();
 
 
 
-      }
+

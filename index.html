@@ -9,35 +9,43 @@
 </head>
 
 <body>
-    <div><button class="change-color" onclick="changeColor()">
+    <div><button class="change-color" >
         <!-- <img src="Icons/Farbkreis.jpg" alt="Change the color"> -->
         </button></div>
      <div class="container">
        <h1>ART GENERATOR</h1>
        <div class="flex">
-         <form class="flex" id="submit">
            <input
              type="text"
              id="search"
              placeholder="Search for Artworks"
            />
-           <button class="search-btn" type="submit">
+           <button class="search-btn">
             
            </button>
-         </form>
+         
          
        </div>
-       <div class="flex"> 
-           <img src="json/images/header.png" alt="Artworks">
-       </div>
-       <div>
-         <div>   
-             <h4> Press the button to learn something about art </h4>  
-             <button class="discover-btn" onclick="displayRandomImages();"> Discover Artworks</button>  
-             </div>  
-       </div>
+       <div id="loadingPage">
+        <div class="flex"> 
+            <img src="json/images/header.png" alt="Artworks">
+        </div>
+        <div>
+          <div>   
+              <h4> Press the button to learn something about art </h4>  
+              <button class="discover-btn" > Discover Artworks</button>  
+              </div>  
+        </div>
+        </div>
        </div>
       
+       </div>
+      <div id="artworkPage">
+          Artwork
+    <h1 id="headline"></h1>
+    <img id="image">
+    <div id="description"></div>
+      </div>
  
       
      </div>
