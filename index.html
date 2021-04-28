@@ -4,14 +4,19 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>ART GENERATOR</title>
 </head>
 
 <body>
     <div><button class="change-color" >
-        <!-- <img src="Icons/Farbkreis.jpg" alt="Change the color"> -->
-        </button></div>
+        <i class="fas fa-tint fa-lg"></i>
+        </button>
+    </div>
      <div class="container">
        <h1>ART GENERATOR</h1>
        <div class="flex">
@@ -21,10 +26,8 @@
              placeholder="Search for Artworks"
            />
            <button class="search-btn">
-            
+            <i class="fas fa-search"></i>
            </button>
-         
-         
        </div>
        <div id="loadingPage">
         <div class="flex"> 
@@ -40,13 +43,14 @@
        </div>
       
        </div>
+       <div class="artworkPage">
       <div id="artworkPage">
-          Artwork
-    <h1 id="headline"></h1>
+    <h2 id="headline"></h2>
     <img id="image">
     <div id="description"></div>
+    <button class="new-btn"> New Artwork</button>
       </div>
- 
+    </div>
       
      </div>
      <script defer src="build/bundle.js"></script>

@@ -9,11 +9,35 @@
     margin: 0;
   }
   
+  #artworkPage {
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    
+  }
+
+
+  #description {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 5cm;
+    padding-right: 5cm;
+    margin-top: 1cm;
+
+  }
+  
 
   h1 {
       text-shadow: 0.1em 0.1em 0.2em black;
       font-size: 2cm;
       margin-top: 0.8cm;
+      text-align: center;
+  }
+
+  h2 {
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-size: 1cm;
+    text-align: center;
   }
 
   h4 {
@@ -84,9 +108,29 @@
       
   }
 
-  .discover-btn:hover {background-color: gainsboro; border: 1px solid grey;}
+  .discover-btn:hover {background-color: gainsboro; color: white; border: 1px solid grey;}
 
-  
+  .artworkPage {
+    margin: auto;
+    padding-left: 2cm;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+  }
+
+  .new-btn {
+    cursor: pointer;
+      background-color: white;
+      color: grey;
+      margin: 1cm;
+      align-self: center;
+  }
+
+  .new-btn:hover {background-color: gainsboro; border: 1px solid grey;}
 
  /* img {
       width: 20%;
