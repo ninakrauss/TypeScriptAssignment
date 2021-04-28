@@ -17,6 +17,8 @@ searchButtons[0].addEventListener("click", searchArtworks);
 let discoverButtons : any= document.getElementsByClassName("discover-btn");
 discoverButtons[0].addEventListener("click", randomArtwork);
 
+let newButtons : any= document.getElementsByClassName("new-btn");
+newButtons[0].addEventListener("click", randomArtwork);
 
 
 
