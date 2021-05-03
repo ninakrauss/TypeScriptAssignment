@@ -8,6 +8,9 @@ import { randomArtwork, searchArtworks} from "./searchArtworks";
 let artworkPage : any = document.getElementById("artworkPage");
 artworkPage.style.display="none";
 
+let errorMessage : any = document.getElementById("errorMessage");
+errorMessage.style.display="none";
+
 let changeColorButtons : any= document.getElementsByClassName("change-color");
 changeColorButtons[0].addEventListener("click", changeBackgroundColor);
 
