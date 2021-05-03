@@ -132,12 +132,12 @@
 
   .new-btn:hover {background-color: gainsboro; border: 1px solid grey;}
 
- /* img {
-      width: 20%;
+ img {
+      width: 30%;
       margin-top: 1cm;
       align-items: center;
          
-  } */
+  } 
 
   .header {
       margin-top: 1cm;
