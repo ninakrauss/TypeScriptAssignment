@@ -2,7 +2,7 @@
 
 
 
-import { changeBackgroundColor} from "./changeBackgroundColor";
+import { changeBackgroundColor, soundEffect} from "./changeBackgroundColor";
 import { randomArtwork, searchArtworks} from "./searchArtworks";
 
 let artworkPage : any = document.getElementById("artworkPage");
@@ -13,6 +13,9 @@ errorMessage.style.display="none";
 
 let changeColorButtons : any= document.getElementsByClassName("change-color");
 changeColorButtons[0].addEventListener("click", changeBackgroundColor);
+
+let colorSound : any= document.getElementsByClassName("change-color");
+colorSound[0].addEventListener("click", soundEffect);
 
 let searchButtons : any= document.getElementsByClassName("search-btn");
 searchButtons[0].addEventListener("click", searchArtworks);
