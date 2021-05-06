@@ -39,6 +39,12 @@ var artworks:Artwork[]= [{
     image:"https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/600px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
     artist:"Vincent van Gogh",
     description:"The Starry Night is an oil on canvas painting by Dutch Post-Impressionist painter Vincent van Gogh. Painted in June 1889, it depicts the view from the east-facing window of his asylum room at Saint-Rémy-de-Provence, just before sunrise, with the addition of an imaginary village."
+},
+{
+    headline:"The Persistence of Memory (1931)",
+    image:"https://upload.wikimedia.org/wikipedia/en/d/dd/The_Persistence_of_Memory.jpg",
+    artist:"Salvador Dali",
+    description:"The Persistence of Memory (Spanish: La persistencia de la memoria) is a 1931 painting by artist Salvador Dalí and one of the most recognizable works of Surrealism."
 }]
 
 export function searchArtworks() {
@@ -54,18 +60,13 @@ export function searchArtworks() {
 
             let artworkPage : any = document.getElementById("artworkPage");
             artworkPage.style.display="none";
-    
         }
     
-
     }  
     else {
         alert("Please type in a search term");
     }
     
-
-
-
 }
 export function randomArtwork() {
 setArtwork(artworks[Math.floor(Math.random()*artworks.length)]);
@@ -90,3 +91,6 @@ function setArtwork(artwork:Artwork){
     description.innerHTML= artwork.description;
 }
 
+export function printArtwork() {
+    window.print();
+}

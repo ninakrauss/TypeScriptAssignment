@@ -3,7 +3,7 @@
 
 
 import { changeBackgroundColor, soundEffect} from "./changeBackgroundColor";
-import { randomArtwork, searchArtworks} from "./searchArtworks";
+import { randomArtwork, searchArtworks, printArtwork} from "./searchArtworks";
 
 let artworkPage : any = document.getElementById("artworkPage");
 artworkPage.style.display="none";
@@ -26,6 +26,8 @@ discoverButtons[0].addEventListener("click", randomArtwork);
 let newButtons : any= document.getElementsByClassName("new-btn");
 newButtons[0].addEventListener("click", randomArtwork);
 
+let printButtons : any= document.getElementsByClassName("print-btn");
+printButtons[0].addEventListener("click", printArtwork);
 
 
 const myInputValue = document.querySelector<HTMLInputElement>("#myInput");

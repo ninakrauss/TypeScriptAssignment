@@ -94,11 +94,6 @@
       
   }
 
-  .change-color img {
-      width: 1cm;
-      height: 1cm;
-      
-  }
 
   .discover-btn {
     cursor: pointer;
@@ -151,6 +146,12 @@
       align-items: center;
       width: 80%;
       margin-top: 1cm;
+  }
+
+  @media print {
+    h1, input, .search-btn, .change-color, .new-btn, .print-btn {
+      display: none;
+    }
   }
 
   
