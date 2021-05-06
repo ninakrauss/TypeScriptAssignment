@@ -29,8 +29,14 @@ newButtons[0].addEventListener("click", randomArtwork);
 let printButtons : any= document.getElementsByClassName("print-btn");
 printButtons[0].addEventListener("click", printArtwork);
 
+let inputSearch: any = document.getElementById("search");
+inputSearch.addEventListener("keyup", function(event : any){
+  if (event.keyCode===13){
+    event.preventDefault();
+    searchButtons[0].click()
+  }
+})
 
-const myInputValue = document.querySelector<HTMLInputElement>("#myInput");
 
 
 
