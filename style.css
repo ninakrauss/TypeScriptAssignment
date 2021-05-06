@@ -52,7 +52,7 @@
     text-align: center;
   }
 
-  h4 {
+  h4, #errorMessage {
     color: dimgrey;
 
   }
