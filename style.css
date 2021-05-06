@@ -16,14 +16,26 @@
     
   }
 
+  #loadingPage {
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+  }
+
 
   #description {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    padding-left: 5cm;
-    padding-right: 5cm;
+    /*padding-left: 5cm;
+    padding-right: 5cm;*/
     margin-top: 1cm;
 
+  }
+
+  #artist {
+    margin-top: 1cm;
+    text-shadow: 0.05em 0.05em 0.1em black;
+    font-size: 30px;
   }
   
 
@@ -87,10 +99,10 @@
       cursor: pointer;
       background-color: white;
       float:left;
-      margin: 2%;
+      /*margin: 2%;*/
      width: 1.5cm;
      height: 1.5cm;
-     border-radius: 10px;
+     /*border-radius: 10px;*/
       
   }
 
@@ -107,7 +119,7 @@
 
   .artworkPage {
     margin: auto;
-    padding-left: 2cm;
+    padding-left: 0cm;
     max-width: 800px;
     display: flex;
     flex-direction: column;
@@ -128,7 +140,7 @@
   .new-btn:hover {background-color: gainsboro; border: 1px solid grey;}
 
  img {
-      width: 30%;
+      width: 50%;
       margin-top: 1cm;
       align-items: center;
          
@@ -151,6 +163,10 @@
   @media print {
     h1, input, .search-btn, .change-color, .new-btn, .print-btn {
       display: none;
+    }
+    h2, #artist {
+      color: black;
+      text-shadow: none;
     }
   }
 
