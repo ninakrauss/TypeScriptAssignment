@@ -37,6 +37,12 @@
     text-shadow: 0.05em 0.05em 0.1em black;
     font-size: 30px;
   }
+
+  #period {
+    margin-top: 1cm;
+    font-size: 20px;
+    color:black;
+  }
   
 
   h1 {
